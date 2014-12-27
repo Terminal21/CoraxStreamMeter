@@ -12,30 +12,30 @@ Installation
 Unblock i2c-bcm2708 kernel module.
 In file `/etc/modprobe.d/raspi-blacklist.conf` comment out:
 
-  #blacklist i2c-bcm2708
+    #blacklist i2c-bcm2708
 
 In file `/etc/modules` add:
 
-  i2c-bcm2708
-  i2c-dev
+    i2c-bcm2708
+    i2c-dev
   
 Load kernel module (or reboot)
 
-  sudo modprobe i2c-bcm2708
-  sudo modprobe i2c-dev
+    sudo modprobe i2c-bcm2708
+    sudo modprobe i2c-dev
 
 Install dependencies
 
-  sudo apt-get install i2c-tools python-smbus
+    sudo apt-get install i2c-tools python-smbus
 
 Checkout git repository
 
-  git clone https://github.com/Terminal21/CoraxStreamMeter.git
-  cd CoraxStreamMeter
+    git clone https://github.com/Terminal21/CoraxStreamMeter.git
+    cd CoraxStreamMeter
 
 Run the StreamMeter
 
-  sudo python corax.py 
+    sudo python corax.py 
 
 Deployment
 ----------
